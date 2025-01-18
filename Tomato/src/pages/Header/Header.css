@@ -1,0 +1,60 @@
+.header
+{
+    height: 34vw;
+    margin:30px 10vw;
+    background: url('../../assets/header_img.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.header-content
+{
+    position: absolute;
+    display: column;
+    flex-direction: column;
+    align-items: start;
+    gap:1.5vw;
+    max-width: 50%;
+    bottom:10%;
+    left:6vw;
+    animation: headerAnimation 2s ease-in-out;
+}
+.header-content h2{
+    font-weight: 600;
+    color: #fffcfc;
+    text-shadow:2px 2px 2px #000000;
+    text-wrap: nowrap;
+    font-size: max(3.5vw, 1.3rem);
+}
+.header-content p{
+    font-size: max(1.5vw,6px);
+    color: white;
+    text-shadow:2px 2px 2px #000000;
+    padding: 5px 0px;
+
+}
+.header-content button{
+    border: none;
+    padding:1vw 2.3vw;
+    background-color: white;
+    box-shadow:2px 2px 2px #000000;
+    font-size: max(1vw,9px);
+    color: #747474;
+    border-radius: 50px;
+    cursor: pointer;
+}
+.header-content button:hover{
+    background-color: #d6b223;
+    color: #000;
+}
+@keyframes headerAnimation
+{
+    0%
+    {
+        opacity: 0;
+    }
+    100%
+    {
+        opacity: 1;
+    }
+}

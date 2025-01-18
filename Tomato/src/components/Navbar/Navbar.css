@@ -1,0 +1,74 @@
+.navbar
+{
+    width: 100%;
+    padding: 20px 0px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+.navbar>.logo{
+    width: max(80px,11vw);
+    padding-left: 4px;
+}
+.navbar-menu
+{
+    display: flex;
+    align-items: center;
+    text-wrap: nowrap;
+    list-style: none;
+    gap: 20px;
+    font-size: max(13px,1.5vw);
+    color:#49557e;
+}
+.navbar button{
+    background-color: transparent;
+    font-size: max(10px,1.5vw);
+    color: #49557e;
+    text-wrap: nowrap;
+    border: 1px solid tomato;
+    padding:0.7vw 0.9vw;
+    border-radius: 30%;
+    cursor: pointer;
+}
+.navbar button:hover{
+    background-color: tomato;
+    color: white;
+    transition: 0.4s;
+}
+.navbar-right{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.navbar-right>img{
+    cursor: pointer;
+    width: max(13px,2vw);
+}
+.active-menu{
+    text-decoration: underline;
+    text-underline-offset: 5px;
+    text-decoration-color: tomato;
+}
+.navbar-menu>li:hover{
+    text-decoration: underline;
+    text-underline-offset: 5px;
+    text-decoration-color: tomato;
+    cursor: pointer;
+}
+.navbar-search-icon{
+    position: relative;
+}
+.navbar-search-icon>img{
+    cursor: pointer;
+    width: max(13px,2vw);
+}
+.navbar-search-icon>.dot{
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    width:min(10px,0.4rem) ;
+    min-height: min(10px,0.4rem);
+    border-radius: 50%;
+    background-color: tomato;
+}
