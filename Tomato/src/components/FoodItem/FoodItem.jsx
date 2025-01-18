@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 import './FoodItem.css'
 
-const FoodItem = ({key,id,category,name,image,price,description,rating}) => {
+const FoodItem = ({key,id,category,name,image,price,description}) => {
   return (
     <div className='food-item'>
       <div className="food-item-img">
@@ -13,7 +13,6 @@ const FoodItem = ({key,id,category,name,image,price,description,rating}) => {
         <p>Category: {category}</p>
         <p>Description: {description}</p>
         <p>Price: ${price}</p>
-        <img src={rating} alt=""/>
       </div>
     </div>
   )
